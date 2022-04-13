@@ -4,7 +4,7 @@ export const StyledHeaderDetail = styled.div`
   background-color: var(--primary-color-blue);
   color: var(--secondary-color-white);
   padding: 72px;
-  height: 100vh;
+  min-height: 100vh;
 
   h1 {
     width: 1115px;
@@ -41,6 +41,10 @@ export const StyledHeaderDetail = styled.div`
     line-height: 22px;
   }
 
+  a:hover {
+    color: var(--secondary-color-white);
+  }
+
   @media screen and (max-width: 640px) {
     height: 847px;
     padding: 24px;
@@ -74,7 +78,18 @@ export const StyledHeaderDetailContent = styled.div`
 export const StyledHeaderIcon = styled.div`
   width: 100%;
 
+  @keyframes spin {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+
   .header-icon {
+    animation-name: spin;
+    animation-duration: 3s;
     width: 100px;
   }
 
@@ -94,7 +109,12 @@ export const StyledHeaderButton = styled.button`
   align-items: center;
   justify-content: space-between;
   background-color: var(--secondary-color-white);
-  border: none;
+  border: 1px solid var(--primary-color-blue);
+
+  :hover {
+    background-color: var(--primary-color-blue);
+    border: 1px solid var(--secondary-color-white);
+  }
 
   @media screen and (max-width: 640px) {
     width: 56%;

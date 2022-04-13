@@ -53,10 +53,26 @@ export const StyledInnovatorCard = styled.div`
   max-height: 443px;
   border: 1px solid var(--primary-color-blue);
   color: var(--primary-color-blue);
+  background-color: var(--secondary-color-white);
 
-  img {
+  .card-image {
     width: 100%;
+    max-width: 100%;
+    height: 100%;
+    max-height: 100%;
+    display: block;
     object-fit: cover;
+    transition: all 0.2s linear;
+  }
+
+  .card-image:hover {
+    transform: scale(1.1);
+  }
+
+  :hover {
+    color: var(--secondary-color-white);
+    background-color: var(--primary-color-blue);
+
   }
 
   @media screen and (max-width: 640px) {
@@ -68,6 +84,8 @@ export const StyledInnovatorCard = styled.div`
 `;
 
 export const StyledCardImage = styled.div`
+  overflow: hidden;
+
   display: flex;
   width: 380px;
   height: 443px;

@@ -30,9 +30,7 @@ const HeaderDetail = () => {
             deeper dive into some of these contributions below.
           </p>
           <StyledHeaderButton>
-            <a href="/" target="_blank" rel="noopener noreferrer">
-              Learn more
-            </a>
+            <a href="#select-innovator">Learn more</a>
             <img className="icon" src={icon} alt="icon" />
           </StyledHeaderButton>
         </StyledHeaderParagraph>

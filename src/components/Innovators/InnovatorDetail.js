@@ -11,7 +11,11 @@ const InnovatorDetail = ({ innovator }) => {
   return (
     <StyledInnovatorCard>
       <StyledCardImage>
-        <img src={innovator.image} alt={innovator.altText} />
+        <img
+          src={innovator.image}
+          className="card-image"
+          alt={innovator.altText}
+        />
       </StyledCardImage>
       <StyledCardDetails>
         <StyledCardTitle>{innovator.name}</StyledCardTitle>

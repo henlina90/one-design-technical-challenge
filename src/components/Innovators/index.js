@@ -20,7 +20,7 @@ const Innovators = () => {
   ));
 
   return (
-    <StyledInnovators>
+    <StyledInnovators id="select-innovator">
       <StyledOptions>
         <label>Select an innovator...</label>
         <select onChange={handleInnovatorChange}>{innovatorOptions}</select>
