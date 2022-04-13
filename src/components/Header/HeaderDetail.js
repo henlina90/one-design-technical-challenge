@@ -1,25 +1,25 @@
 import React from "react";
-import logo from "../../assets/svg/asterisk.svg";
+import asterisk from "../../assets/svg/asterisk.svg";
 import icon from "../../assets/svg/caret-double.svg";
 import {
-  StyledButton,
-  StyledHeaderContent,
-  StyledHeaderDetails,
+  StyledHeaderButton,
+  StyledHeaderDetailContent,
+  StyledHeaderDetail,
   StyledHeaderIcon,
   StyledHeaderParagraph,
 } from "./Header.css";
 
-const HeaderDetails = () => {
+const HeaderDetail = () => {
   return (
-    <StyledHeaderDetails>
+    <StyledHeaderDetail>
       <h1>
         Women
-        <span className="span-text"> Innovators</span> in Computer Science
+        <span> Innovators</span> in Computer Science
       </h1>
       <hr />
-      <StyledHeaderContent>
+      <StyledHeaderDetailContent>
         <StyledHeaderIcon>
-          <img src={logo} alt="logo" />
+          <img className="header-icon" src={asterisk} alt="asterisk" />
         </StyledHeaderIcon>
         <StyledHeaderParagraph>
           <p>
@@ -29,16 +29,16 @@ const HeaderDetails = () => {
             computer program and advancing human space exploration. Take a
             deeper dive into some of these contributions below.
           </p>
-          <StyledButton>
+          <StyledHeaderButton>
             <a href="/" target="_blank" rel="noopener noreferrer">
               Learn more
             </a>
-            <img src={icon} alt="logo" />
-          </StyledButton>
+            <img className="icon" src={icon} alt="icon" />
+          </StyledHeaderButton>
         </StyledHeaderParagraph>
-      </StyledHeaderContent>
-    </StyledHeaderDetails>
+      </StyledHeaderDetailContent>
+    </StyledHeaderDetail>
   );
 };
 
-export default HeaderDetails;
+export default HeaderDetail;

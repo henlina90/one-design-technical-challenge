@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { innovators } from "../../assets/data";
-import { StyledInnovators, StyledLabel, StyledOptions } from "./Innovator.css";
-import InnovatorDetails from "./InnovatorDetails";
+import { StyledInnovators, StyledOptions } from "./Innovator.css";
+import InnovatorDetail from "./InnovatorDetail";
 
 const Innovators = () => {
   const [innovator, setInnovator] = useState(innovators[0]);
@@ -25,7 +25,7 @@ const Innovators = () => {
         <label>Select an innovator...</label>
         <select onChange={handleInnovatorChange}>{innovatorOptions}</select>
       </StyledOptions>
-      <InnovatorDetails innovator={innovator} />
+      <InnovatorDetail innovator={innovator} />
     </StyledInnovators>
   );
 };

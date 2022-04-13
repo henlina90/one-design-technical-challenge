@@ -1,5 +1,3 @@
-/* @import "./assets/webfonts/Px-Grotesk-Screen/fonts.css"; */
-
 /* LEGAL DISCLAIMER
  *
  * These Fonts are licensed only for use on these domains and their subdomains:
@@ -22,21 +20,26 @@
 
 @font-face {
   font-family: "Px Grotesk Regular";
-  src: url("webfonts/Px-Grotesk-Regular/fonts.css");
-  src: url("webfonts/Px-Grotesk-Regular/fonts.css") format("embedded-opentype"),
-    url("webfonts/Px-Grotesk-Regular/Px-Grotesk-Regular.woff") format("woff2"),
-    url("webfonts/Px-Grotesk-Regular/Px-Grotesk-Regular.woff2") format("woff");
+  src: url("./assets/webfonts/Px-Grotesk-Regular/fonts.css");
+  src: url("./assets/webfonts/Px-Grotesk-Regular/fonts.css")
+      format("embedded-opentype"),
+    url("./assets/webfonts/Px-Grotesk-Regular/Px-Grotesk-Regular.woff")
+      format("woff2"),
+    url("./assets/webfonts/Px-Grotesk-Regular/Px-Grotesk-Regular.woff2")
+      format("woff");
   font-weight: 400;
   font-style: normal;
 }
 
 @font-face {
   font-family: "Px Grotesk Screen";
-  src: url("webfonts/Px-Grotesk-Screen/Px-Grotesk-Screen.eot");
-  src: url("webfonts/Px-Grotesk-Screen/Px-Grotesk-Screen.eot")
+  src: url("./assets/webfonts/Px-Grotesk-Screen/fonts.css");
+  src: url("./assets/webfonts/Px-Grotesk-Screen/Px-Grotesk-Screen.eot")
       format("embedded-opentype"),
-    url("webfonts/Px-Grotesk-Screen/Px-Grotesk-Screen.woff") format("woff2"),
-    url("webfonts/Px-Grotesk-Screen/Px-Grotesk-Screen.woff2") format("woff");
+    url("./assets/webfonts/Px-Grotesk-Screen/Px-Grotesk-Screen.woff")
+      format("woff2"),
+    url("./assets/webfonts/Px-Grotesk-Screen/Px-Grotesk-Screen.woff")
+      format("woff");
   font-weight: 200;
   font-style: normal;
 }

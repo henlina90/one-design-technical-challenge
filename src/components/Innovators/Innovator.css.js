@@ -1,12 +1,21 @@
 import styled from "@emotion/styled";
 
+/* index.js */
+
 export const StyledInnovators = styled.div`
-  height: 100vh;
-  padding: 24px 80px;
-  color: var(--primary-color);
+  min-height: 100vh;
+  padding: 72px;
+  background-color: var(--secondary-color-white);
+  color: var(--primary-color-blue);
+
+  @media screen and (max-width: 640px) {
+    padding: 24px;
+  }
 `;
 
-export const StyledOptions = styled.label`
+export const StyledOptions = styled.div`
+  font-weight: 800;
+  line-height: 93.56%;
   font-family: var(--secondary-font-family);
   font-size: var(--text-style-eyebrow);
 
@@ -21,44 +30,50 @@ export const StyledOptions = styled.label`
   }
 
   select {
-    border: 1px solid var(--primary-color);
-    color: var(--primary-color);
+    border: 1px solid var(--primary-color-blue);
+    color: var(--primary-color-blue);
     padding: 12px;
     width: 413px;
+    margin-bottom: 28px;
+  }
+
+  @media screen and (max-width: 640px) {
+    select {
+      width: 100%;
+      margin-bottom: 16px;
+    }
   }
 `;
 
+/* InnovatorDetail.js */
+
 export const StyledInnovatorCard = styled.div`
   display: flex;
-  width: 738px;
-  height: 443px;
-  border: 1px solid var(--primary-color);
-  margin-top: 32px;
-  color: var(--primary-color);
-`;
-
-export const StyledCardTitle = styled.h2`
-  font-size: var(--text-style-lg);
-  width: 100%;
-`;
-
-export const StyledCardBody = styled.p`
-  font-size: var(--text-style-body);
-  font-family: var(--font-family-regular);
-  font-style: normal;
-  font-weight: 400;
-  font-size: 18px;
-  line-height: 24px; /* or 136% */
-`;
-
-export const StyledCardImage = styled.div`
-  display: flex;
-  max-width: 366px;
+  max-width: 738px;
   max-height: 443px;
+  border: 1px solid var(--primary-color-blue);
+  color: var(--primary-color-blue);
 
   img {
     width: 100%;
     object-fit: cover;
+  }
+
+  @media screen and (max-width: 640px) {
+    flex-direction: column;
+    min-width: 100%;
+    max-height: 650px;
+    }
+  }
+`;
+
+export const StyledCardImage = styled.div`
+  display: flex;
+  width: 380px;
+  height: 443px;
+
+  @media screen and (max-width: 640px) {
+    width: 100%;
   }
 `;
 
@@ -67,5 +82,25 @@ export const StyledCardDetails = styled.div`
   flex-direction: column;
   justify-content: space-between;
   max-width: 60%;
-  padding: 32px;
+  padding: 20px;
+
+  @media screen and (max-width: 640px) {
+    max-width: 100%;
+  }
+`;
+
+export const StyledCardTitle = styled.h2`
+  font-size: var(--text-style-lg);
+  width: 100%;
+
+  @media screen and (max-width: 640px) {
+    margin-bottom: 8px;
+  }
+`;
+
+export const StyledCardBody = styled.p`
+  font-size: var(--text-style-body);
+  font-family: var(--font-family-regular);
+  font-weight: 400;
+  line-height: 24px;
 `;

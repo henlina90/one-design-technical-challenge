@@ -1,6 +1,7 @@
 :root {
-  --primary-color: #0000ff;
-  --secondary-color: #ffffff;
+  --primary-color-blue: #0000ff;
+  --background-color-red: #ff0000;
+  --secondary-color-white: #ffffff;
   --primary-font-family: "Px Grotesk Regular";
   --secondary-font-family: "Px Grotesk Screen";
   --text-style-eyebrow: 14px;
@@ -26,6 +27,7 @@ body {
 
 body {
   -webkit-font-smoothing: antialiased;
+  background-color: var(--background-color-red);
 }
 
 img,

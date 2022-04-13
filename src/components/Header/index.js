@@ -1,9 +1,9 @@
 import React from "react";
 import "./Header.css.js";
-import HeaderDetails from "./HeaderDetails";
+import HeaderDetail from "./HeaderDetail.js";
 
 const Header = () => {
-  return <HeaderDetails />;
+  return <HeaderDetail />;
 };
 
 export default Header;

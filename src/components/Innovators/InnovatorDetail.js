@@ -7,7 +7,7 @@ import {
   StyledInnovatorCard,
 } from "./Innovator.css";
 
-const InnovatorDetails = ({ innovator }) => {
+const InnovatorDetail = ({ innovator }) => {
   return (
     <StyledInnovatorCard>
       <StyledCardImage>
@@ -21,4 +21,4 @@ const InnovatorDetails = ({ innovator }) => {
   );
 };
 
-export default InnovatorDetails;
+export default InnovatorDetail;
