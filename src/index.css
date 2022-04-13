@@ -1,13 +1,57 @@
+/* @import "./assets/webfonts/Px-Grotesk-Screen/fonts.css"; */
+
+/* LEGAL DISCLAIMER
+ *
+ * These Fonts are licensed only for use on these domains and their subdomains:
+ * onedesigncompany.com
+ *
+ * It is illegal to download or use them on other websites.
+ *
+ * While the @font-face statements below may be modified by the client, this
+ * disclaimer may not be removed.
+ *
+ * Optimo webfonts are protected by copyright law and provided under license. To modify, alter, translate, convert, decode or reverse engineer in any manner whatsoever, including converting the Font Software into a different format is strictly prohibited. The webfont files are not to be used for anything other than web font use.
+ *
+ * optimo.ch
+ */
+
+/* INSTRUCTIONS
+ *
+ * Copy the Legal Disclaimer, the domains name and the @font-faces statements to your regular CSS file. The fonts folder(s) should be placed relative to the regular CSS file.
+ */
+
+@font-face {
+  font-family: "Px Grotesk Regular";
+  src: url("webfonts/Px-Grotesk-Regular/fonts.css");
+  src: url("webfonts/Px-Grotesk-Regular/fonts.css") format("embedded-opentype"),
+    url("webfonts/Px-Grotesk-Regular/Px-Grotesk-Regular.woff") format("woff2"),
+    url("webfonts/Px-Grotesk-Regular/Px-Grotesk-Regular.woff2") format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Px Grotesk Screen";
+  src: url("webfonts/Px-Grotesk-Screen/Px-Grotesk-Screen.eot");
+  src: url("webfonts/Px-Grotesk-Screen/Px-Grotesk-Screen.eot")
+      format("embedded-opentype"),
+    url("webfonts/Px-Grotesk-Screen/Px-Grotesk-Screen.woff") format("woff2"),
+    url("webfonts/Px-Grotesk-Screen/Px-Grotesk-Screen.woff2") format("woff");
+  font-weight: 200;
+  font-style: normal;
+}
+
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  font-family: "Px Grotesk Regular";
+  /* font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif; */
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
