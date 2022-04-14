@@ -18,12 +18,12 @@
  * Copy the Legal Disclaimer, the domains name and the @font-faces statements to your regular CSS file. The fonts folder(s) should be placed relative to the regular CSS file.
  */
 
-  @font-face {
-  font-family: 'Px Grotesk';
-  src: url('Px-Grotesk-Screen.eot');
-  src: url('Px-Grotesk-Screen.eot?#iefix') format('embedded-opentype'),
-       url('Px-Grotesk-Screen.woff2') format('woff2'),
-       url('Px-Grotesk-Screen.woff') format('woff');
+@font-face {
+  font-family: "Px Grotesk Screen";
+  src: url("Px-Grotesk-Screen.eot");
+  src: url("Px-Grotesk-Screen.eot?#iefix") format("embedded-opentype"),
+    url("Px-Grotesk-Screen.woff2") format("woff2"),
+    url("Px-Grotesk-Screen.woff") format("woff");
   font-weight: 200;
   font-style: normal;
 }

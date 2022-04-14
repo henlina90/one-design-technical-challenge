@@ -1,3 +1,6 @@
+@import "./fonts/Px-Grotesk-Regular/fonts.css";
+@import "./fonts/Px-Grotesk-Screen/fonts.css";
+
 :root {
   --primary-color-blue: #0000ff;
   --background-color-red: #ff0000;
@@ -87,17 +90,22 @@ h6 {
  * optimo.ch
  */
 
-@font-face {
+/* @font-face {
   font-family: "Px Grotesk Regular";
-  src: url("./assets/webfonts/Px-Grotesk-Regular/fonts.css");
-  src: url("./assets/webfonts/Px-Grotesk-Regular/fonts.css")
-      format("embedded-opentype"),
-    url("./assets/webfonts/Px-Grotesk-Regular/Px-Grotesk-Regular.woff")
+  src: url("./assets/webfonts/Px-Grotesk-Regular/Px-Grotesk-Regular.woff");
+  src: url("./assets/webfonts/Px-Grotesk-Regular/Px-Grotesk-Regular.woff")
       format("woff2"),
     url("./assets/webfonts/Px-Grotesk-Regular/Px-Grotesk-Regular.woff2")
       format("woff");
   font-weight: 400;
   font-style: normal;
+} */
+/* @font-face {
+  font-family: "Px Grotesk Regular";
+  src: local("Px Grotesk Regular"),
+    url(./fonts/Px-Grotesk-Regular/Px-Grotesk-Regular.woff) format("woff");
+  src: local("Px Grotesk Regular"),
+    url(./fonts/Px-Grotesk-Regular/Px-Grotesk-Regular.woff) format("woff2");
 }
 
 @font-face {
@@ -111,4 +119,4 @@ h6 {
       format("woff");
   font-weight: 200;
   font-style: normal;
-}
+} */
