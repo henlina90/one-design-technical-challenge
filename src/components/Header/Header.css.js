@@ -24,11 +24,78 @@ export const StyledHeaderDetail = styled.div`
     border: 2px solid var(--secondary-color-white);
   }
 
+  @media screen and (max-width: 640px) {
+    height: 847px;
+    padding: 24px;
+
+    h1 {
+      font-size: 68px;
+      line-height: 96.5%;
+      width: 100%;
+      margin: 88px 0px 24px 0px;
+    }
+  }
+`;
+
+export const StyledHeaderContent = styled.div`
+  display: flex;
+  margin: 56px 0px;
+
+  @media screen and (max-width: 640px) {
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 28px;
+    margin: 24px 0px;
+  }
+`;
+
+export const StyledHeaderIcon = styled.div`
+  width: 100%;
+
+  .header-icon {
+    animation-name: spin;
+    animation-duration: 3s;
+    width: 100px;
+  }
+
+  @keyframes spin {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+  @media screen and (max-width: 640px) {
+    .header-icon {
+      width: 50px;
+    }
+  }
+`;
+
+export const StyledHeaderParagraph = styled.div`
+  width: 100%;
+
   p {
     font-size: var(--text-style-lg);
     line-height: 31px;
     margin-bottom: 32px;
   }
+
+  @media screen and (max-width: 640px) {
+    p {
+      font-size: var(--text-style-body);
+      line-height: 24px;
+    }
+  }
+`;
+
+export const StyledHeaderButton = styled.button`
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: var(--secondary-color-white);
+  border: 1px solid var(--primary-color-blue);
 
   a {
     font-family: var(--secondary-font-family);
@@ -45,82 +112,12 @@ export const StyledHeaderDetail = styled.div`
     color: var(--secondary-color-white);
   }
 
-  @media screen and (max-width: 640px) {
-    height: 847px;
-    padding: 24px;
-
-    h1 {
-      font-size: 68px;
-      line-height: 96.5%;
-      width: 100%;
-      margin: 88px 0px 24px 0px;
-    }
-
-    p {
-      font-size: var(--text-style-body);
-      line-height: 24px;
-    }
-  }
-`;
-
-export const StyledHeaderDetailContent = styled.div`
-  display: flex;
-  margin: 56px 0px;
-
-  @media screen and (max-width: 640px) {
-    flex-direction: column;
-    justify-content: space-between;
-    gap: 28px;
-    margin: 24px 0px;
-  }
-`;
-
-export const StyledHeaderIcon = styled.div`
-  width: 100%;
-
-  @keyframes spin {
-    from {
-      transform: rotate(0deg);
-    }
-    to {
-      transform: rotate(360deg);
-    }
-  }
-
-  .header-icon {
-    animation-name: spin;
-    animation-duration: 3s;
-    width: 100px;
-  }
-
-  @media screen and (max-width: 640px) {
-    .header-icon {
-      width: 50px;
-    }
-  }
-`;
-
-export const StyledHeaderParagraph = styled.div`
-  width: 100%;
-`;
-
-export const StyledHeaderButton = styled.button`
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  background-color: var(--secondary-color-white);
-  border: 1px solid var(--primary-color-blue);
-
   :hover {
     background-color: var(--primary-color-blue);
     border: 1px solid var(--secondary-color-white);
   }
 
-  @media screen and (max-width: 640px) {
-    width: 56%;
-
-    .icon {
-      margin-right: 16px;
-    }
+  .icon {
+    margin-right: 16px;
   }
 `;

@@ -14,8 +14,6 @@ export const StyledInnovators = styled.div`
 `;
 
 export const StyledOptions = styled.div`
-  font-weight: 800;
-  line-height: 93.56%;
   font-family: var(--secondary-font-family);
   font-size: var(--text-style-eyebrow);
 
@@ -48,12 +46,12 @@ export const StyledOptions = styled.div`
 /* InnovatorDetail.js */
 
 export const StyledInnovatorCard = styled.div`
-  display: flex;
-  max-width: 738px;
-  max-height: 443px;
   border: 1px solid var(--primary-color-blue);
   color: var(--primary-color-blue);
   background-color: var(--secondary-color-white);
+  display: flex;
+  max-width: 738px;
+  max-height: 443px;
 
   .card-image {
     width: 100%;
@@ -85,7 +83,6 @@ export const StyledInnovatorCard = styled.div`
 
 export const StyledCardImage = styled.div`
   overflow: hidden;
-
   display: flex;
   width: 380px;
   height: 443px;

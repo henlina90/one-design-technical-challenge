@@ -3,7 +3,7 @@ import asterisk from "../../assets/svg/asterisk.svg";
 import icon from "../../assets/svg/caret-double.svg";
 import {
   StyledHeaderButton,
-  StyledHeaderDetailContent,
+  StyledHeaderContent,
   StyledHeaderDetail,
   StyledHeaderIcon,
   StyledHeaderParagraph,
@@ -17,7 +17,7 @@ const HeaderDetail = () => {
         <span> Innovators</span> in Computer Science
       </h1>
       <hr />
-      <StyledHeaderDetailContent>
+      <StyledHeaderContent>
         <StyledHeaderIcon>
           <img className="header-icon" src={asterisk} alt="asterisk" />
         </StyledHeaderIcon>
@@ -34,7 +34,7 @@ const HeaderDetail = () => {
             <img className="icon" src={icon} alt="icon" />
           </StyledHeaderButton>
         </StyledHeaderParagraph>
-      </StyledHeaderDetailContent>
+      </StyledHeaderContent>
     </StyledHeaderDetail>
   );
 };
