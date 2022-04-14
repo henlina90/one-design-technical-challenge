@@ -1,13 +1,13 @@
 import React from "react";
 import {
+  StyledCardDescription,
   StyledCardBody,
-  StyledCardDetails,
   StyledCardImage,
   StyledCardTitle,
   StyledInnovatorCard,
 } from "./Innovator.css";
 
-const InnovatorDetail = ({ innovator }) => {
+const InnovatorCard = ({ innovator }) => {
   return (
     <StyledInnovatorCard>
       <StyledCardImage>
@@ -17,12 +17,12 @@ const InnovatorDetail = ({ innovator }) => {
           alt={innovator.altText}
         />
       </StyledCardImage>
-      <StyledCardDetails>
+      <StyledCardBody>
         <StyledCardTitle>{innovator.name}</StyledCardTitle>
-        <StyledCardBody>{innovator.description}</StyledCardBody>
-      </StyledCardDetails>
+        <StyledCardDescription>{innovator.description}</StyledCardDescription>
+      </StyledCardBody>
     </StyledInnovatorCard>
   );
 };
 
-export default InnovatorDetail;
+export default InnovatorCard;

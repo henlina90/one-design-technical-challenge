@@ -1,3 +1,77 @@
+:root {
+  --primary-color-blue: #0000ff;
+  --background-color-red: #ff0000;
+  --secondary-color-white: #ffffff;
+  --primary-font-family: "Px Grotesk Regular";
+  --secondary-font-family: "Px Grotesk Screen";
+  --text-style-eyebrow: 14px;
+  --text-style-heading1: 123.91px;
+  --text-style-lg: 26px;
+  --text-style-body: 18px;
+}
+
+html,
+body {
+  margin: 0;
+  font-family: "Px Grotesk Regular";
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  scroll-behavior: smooth !important;
+}
+
+#root {
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  isolation: isolate;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+/* Use a more-intuitive box-sizing model */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Remove default margin */
+* {
+  margin: 0;
+}
+
+/* Improve media defaults */
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+/* Remove built-in form typography styles */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* Avoid text overflows */
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+
 /* LEGAL DISCLAIMER
  *
  * These Fonts are licensed only for use on these domains and their subdomains:
@@ -11,11 +85,6 @@
  * Optimo webfonts are protected by copyright law and provided under license. To modify, alter, translate, convert, decode or reverse engineer in any manner whatsoever, including converting the Font Software into a different format is strictly prohibited. The webfont files are not to be used for anything other than web font use.
  *
  * optimo.ch
- */
-
-/* INSTRUCTIONS
- *
- * Copy the Legal Disclaimer, the domains name and the @font-faces statements to your regular CSS file. The fonts folder(s) should be placed relative to the regular CSS file.
  */
 
 @font-face {
@@ -42,19 +111,4 @@
       format("woff");
   font-weight: 200;
   font-style: normal;
-}
-
-body {
-  margin: 0;
-  font-family: "Px Grotesk Regular";
-  /* font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
-    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
-    sans-serif; */
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
-    monospace;
 }
